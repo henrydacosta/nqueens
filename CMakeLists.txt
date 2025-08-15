@@ -1,0 +1,23 @@
+﻿cmake_minimum_required(VERSION 3.11...4.1)
+
+project(NQueens)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+if(MSVC)
+    add_compile_options(/W4 /WX)
+else()
+    add_compile_options(-Wall -Wextra -pedantic)
+endif()
+
+add_subdirectory(lib)
+
+add_subdirectory(app)
+
+include(FetchContent)
+
+include(cmake/cxxopts.cmake)
+
+include(cmake/doxygen.cmake)
