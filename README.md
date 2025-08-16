@@ -19,7 +19,7 @@ To build this project, you will need:
 
 - An internet connection.
 
-This project uses the cxxopts library. The CMake configuration files
+This project uses the [cxxopts](https://github.com/jarro2783/cxxopts) library. The CMake configuration files
 automatically get cxxopts from GitHub.
 
 If you have all the prerequisites and want to build this project, you can issue
