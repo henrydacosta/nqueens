@@ -4,7 +4,7 @@ if(DOXYGEN_FOUND)
     set(DOXYGEN_JAVADOC_AUTOBRIEF YES)
     set(DOXYGEN_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/docs)
     set(DOXYGEN_USE_MDFILE_AS_MAINPAGE ${CMAKE_SOURCE_DIR}/README.md)
-    doxygen_add_docs(NQueensDoc
+    doxygen_add_docs(nqueensdoc
         ${CMAKE_SOURCE_DIR}/README.md
         ${CMAKE_SOURCE_DIR}/lib
         ALL
