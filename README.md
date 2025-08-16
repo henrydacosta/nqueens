@@ -43,8 +43,7 @@ with
 cmake --build build <b>--config Release</b>
 </pre>
 
-If you want to generate the internal version of the docs, with implementation
-details, replace
+If you want to include private members in the generated documentation, replace
 
 <pre>
 cmake -B build .
@@ -53,15 +52,8 @@ cmake -B build .
 with
 
 <pre>
-cmake <b>-DDOXYGEN_INTERNAL_DOCS=YES</b> -B build .
+cmake <b>-DDOXYGEN_EXTRACT_PRIVATE=YES</b> -B build .
 </pre>
-
-The notable outputs from the build are:
-
-| File                                           | Description                                                                         |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------- |
-| build/app[/<i>Configuration</i>]/nqueens[.exe] | The N-Queens solver application, where *Configuration* is **Debug** or **Release**. |
-| build/docs/html/index.html                     | The Doxygen-generated help start page.                                              |
 
 The author has successfully built this project in the following environments:
 
