@@ -58,10 +58,10 @@ cmake <b>-DDOXYGEN_INTERNAL_DOCS=YES</b> -B build .
 
 The notable outputs from the build are:
 
-| File                                     | Description                                                                         |
-| ---------------------------------------- | ----------------------------------------------------------------------------------- |
-| build/app[/<i>Configuration</i>]/nqueens | The N-Queens solver application, where *Configuration* is **Debug** or **Release**. |
-| build/docs/html/index.html               | The Doxygen-generated help page.                                                    |
+| File                                           | Description                                                                         |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------- |
+| build/app[/<i>Configuration</i>]/nqueens[.exe] | The N-Queens solver application, where *Configuration* is **Debug** or **Release**. |
+| build/docs/html/index.html                     | The Doxygen-generated help start page.                                              |
 
 The author has successfully built this project in the following environments:
 

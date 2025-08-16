@@ -1,5 +1,7 @@
-add_library(nqueenslib
+add_library(NQueensLib
     include/NQueensBoard.h
     src/NQueensBoard.cpp)
 
-target_include_directories(nqueenslib PUBLIC include)
+set_target_properties(NQueensLib PROPERTIES OUTPUT_NAME "nqueens")
+
+target_include_directories(NQueensLib PUBLIC include)
